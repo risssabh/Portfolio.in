@@ -783,7 +783,7 @@ nav ul li a:hover::after {
     margin-right: 1px;
     font-size: 17px;
     font-weight: 900;
-    color: #c71610;
+/*     color: #c71610; */
 }
 .fa-envelope:hover {
     color: #CC2E5D;
