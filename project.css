@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Vollkorn:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url(pics/background.png); */
+    background: black;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(pics/background.png); */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
+    margin: auto;
+    left: 0;
+    z-index: 1000;
+    padding: 0 50px;
+    /* background-color: rgb(43, 43, 43); */
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.logo1 {
+    font-weight: 800;
+    text-decoration: none;
+    color: aqua;
+    background: linear-gradient(to right, aqua 50%, #CC2E5D 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.2s ease-out;
+}
+
+.logo1:hover {
+    background-position: -100%;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 25px 16px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* font-weight: 520; */
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #CC2E5D;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.menucv button {
+    width: 10vw;
+    height: 6vh;
+    /* padding: 12px 20px; */
+    border-radius: 14px;
+    color: black;
+    background-color: aqua;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.menucv button:hover {
+    background-color: #CC2E5D;
+    color: black;
+}
+
+.all_project{
+    margin-top: 10%;
+    font-size: 100px;
+    text-align: center;
+}
+
+.card {
+    margin-left: 15%;
+    margin-top: 120px;
+    position: relative;
+    width: 900px;
+    aspect-ratio: 16/9;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card video {
+    width: 100%;
+    height: 100%;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  /* .card__image {
+    width: 100%;
+    height: 100%;
+  } */
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(pics/blue.jpg);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: aqua;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    line-height: 1.4;
+  }
+
+  .card__description1 {
+    margin: 10px 0 10px;
+    font-size: 22px;
+    color: aqua;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .card__description2 {
+    margin: 10px 0 10px;
+    font-size: 14px;
+    color: whitesmoke;
+    line-height: 1.4;
+  }
+  
+  .card__button {
+    padding: 15px 30px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background: aqua;
+    border: none;
+    color: black;
+  }
+
+  .card__button:hover{
+    background: #CC2E5D;
+  }
+  
+  .secondary {
+    background: transparent;
+    color: aqua;
+    border: 1px solid aqua;
+  }
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+/* mobile view */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(pics/mobile-backgroung.png);
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .header-text {
+        margin-top: 45%;
+        font-size: 18px;
+    }
+
+    .hlo {
+        font-size: 22px;
+    }
+
+    .header-text h1 {
+        font-size: 48px;
+    }
+
+    .bio {
+        font-size: 22px;
+    }
+
+    .bio1 {
+        font-size: 16px;
+    }
+
+    br {
+        content: "";
+    }
+
+    br:after {
+        content: " ";
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #CC2E5D;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        text-align: center;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        color: rgb(0, 205, 205);
+    }
+
+    .menucv button {
+        width: 32vw;
+        height: 5vh;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .fa-solid:hover {
+        color: aqua;
+    }
+
+    .home-buttons button {
+        width: 32vw;
+        height: 6vh;
+        /* padding: 12px 20px; */
+        border-radius: 11px;
+        color: black;
+        background-color: aqua;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
