@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="pics/mainlogo.png" type="pics/mainlogo.png">
+    <link rel="icon" href="pics/mainlogo.png"
+          type="pics/mainlogo.png">
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
@@ -55,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1" data-aos="fade-down"> 
-                    <img src="pics/about.jpg" alt="">
+                    <img src="pics/me2.png" alt="">
                 </div>
                 <div class="about-col-2" data-aos="fade-down ">
                     <h1><a href="intro.html" class="name2">About Me</a></h1>
@@ -134,7 +135,10 @@
             </div>
 
             <div class="prjt-btn" data-aos="fade">
-                <a href="#"><button>See more</button></a>
+                <a href="project.html">
+                    <button><svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+                    See more
+                    </button></a>
             </div>
 
         </div>
@@ -167,7 +171,25 @@
             <form style="display: flex; flex-direction:column" name="submit-to-google-sheet" data-aos="fade">
                 <input class="inputemail" placeholder="Email" required id="email" type="email" name="Email id">
                 <textarea class="inputtext" row="8" placeholder="Leave Your Message" id="message" name="Messages"></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit">  
+                    <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Send</span>
+                </button>
             </form>
             <span id="msg"></span>
         </div>
@@ -266,3 +288,4 @@
 </body>
 
 </html>
+
